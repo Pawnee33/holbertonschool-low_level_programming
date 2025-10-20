@@ -7,6 +7,7 @@
  * printf - print "Size of a long long int"
  * printf - print "Size of a float"
  * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
