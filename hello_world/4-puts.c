@@ -1,12 +1,15 @@
 #include <stdio.h>
-/*
- *  main -  point d'entree 
- * @puts: Display my texte
+
+/**
+ *main -  entry point 
+ *@puts: Display my texts
  * 
- * Retourn: Toujours 0 (Success)
+ *Return Always 0 (Success)
  */
 int main(void)
 {
+	/*puts display texts*/
 	puts("\"Programming is like building a multilingual puzzle");
+	/*Return 0*/
 	return (0);
 }
