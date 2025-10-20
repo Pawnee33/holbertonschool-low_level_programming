@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* main point d'entr√e */
 int main(void)
 /*puts affiche Programming is like bulding a multilingual puzzle*/
 {
