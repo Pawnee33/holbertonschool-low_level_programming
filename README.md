@@ -1,1 +1,1 @@
-# holbertonschool-low_level_programming
+list de script en language 'c'
