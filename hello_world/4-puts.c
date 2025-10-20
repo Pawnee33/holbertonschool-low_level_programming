@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* main point d'entree */
+/*
+ *  main -  point d'entree 
+ *
+ * Retourn: Toujours 0 (Success)
+ */
 int main(void)
 /*puts affiche Programming is like bulding a multilingual puzzle*/
 {
