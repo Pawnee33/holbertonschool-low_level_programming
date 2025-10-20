@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
- *main -  entry point 
+ * main -  entry point 
  *@puts: Display my texts
- *Return Always 0 (Success)
+ * Return Always 0 (Success)
  */
 int main(void)
 {
