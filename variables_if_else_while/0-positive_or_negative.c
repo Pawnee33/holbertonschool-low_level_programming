@@ -10,6 +10,7 @@
  * printf - print "is zero"
  * printf - print "is positive"
  * Return: (0)
+*/
 int main(void)
 {
 	int n;
