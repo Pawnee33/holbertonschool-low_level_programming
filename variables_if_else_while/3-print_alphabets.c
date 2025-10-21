@@ -20,8 +20,8 @@ int main(void)
 	{
 		putchar(ch);
 		ch++;
-	}	
-	
+	}
+
 	ch1 = 'A';
 	while (ch1 <= 'Z')
 	{
