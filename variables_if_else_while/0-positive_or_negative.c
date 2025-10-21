@@ -4,6 +4,12 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - entry point
+ * printf - print "is negative"
+ * printf - print "is zero"
+ * printf - print "is positive"
+ * Return: (0)
 int main(void)
 {
 	int n;
