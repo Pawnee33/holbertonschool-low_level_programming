@@ -9,12 +9,19 @@
 */
 int main(void)
 {
-	int num = 0;
+	int i = 48;
 
-	while (num <= 15)
+	while (i  <= 57)
 	{
-		putchar(num);
-		num++;
+		putchar(i);
+		i++;
+	}
+	int i = 97
+
+	while (i  <= 102)
+	{
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
