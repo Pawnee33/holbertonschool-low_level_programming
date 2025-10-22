@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * print_alphabet - Prints the alphabet in lowercase 10 times
- * char - My variable 'ch'
- * for - This function displays the sequence of letters 10 times
- * for - run the 26 letters of the alphabet
- * putchar(ch++) - print the current letter 'ch' then increment 'ch'
- * putchar('\n') - print a newline
+ * print_alphabet_x10 - prints the alphabet in lowercase 10 times
+ *
+ * Description: This function prints the alphabet (a to z) in lowercase
+ * 10 times, each followed by a new line.
+ *
  * Return: 0*
 */
 void print_alphabet_x10(void)
