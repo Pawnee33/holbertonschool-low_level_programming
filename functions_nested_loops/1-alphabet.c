@@ -7,7 +7,7 @@
  * putchar('\n') - print a newline
  * Return: 0*
 */
-int main(void)
+void print_alphabet(void)
 {
 	char ch = 'a';
 
@@ -17,5 +17,4 @@ int main(void)
 		ch++;
 	}
 	putchar('\n');
-	return (0);
 }
