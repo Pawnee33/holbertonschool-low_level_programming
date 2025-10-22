@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - My principal function
+ * prin_alphabet - My principal function
  * char - My variable 'ch' set to 'a'
  * while - loop runs while 'ch' is less than or equal to 'z'
  * putchar(ch) - print l'alphabet to 'a' to 'z'
