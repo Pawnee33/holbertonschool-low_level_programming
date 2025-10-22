@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * prin_alphabet - Prints the alphabet in lowercase with '\n'
+ * prin_alphabet - Prints "l'alphabet"
  * char - My variable 'ch' set to 'a'
  * while - loop runs while 'ch' is less than or equal to 'z'
  * putchar(ch) - print l'alphabet to 'a' to 'z'
