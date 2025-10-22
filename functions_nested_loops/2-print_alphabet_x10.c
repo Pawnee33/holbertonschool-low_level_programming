@@ -2,7 +2,7 @@
 /**
  * print_alphabet - Prints the alphabet in lowercase 10 times
  * char - My variable 'ch'
- * for - loop runs while 'i' and 'j' for repeat the display 10 times
+ * for - This function displays the sequence of letters 10 times
  * for - run the 26 letters of the alphabet
  * putchar(ch++) - print the current letter 'ch' then increment 'ch'
  * putchar('\n') - print a newline
