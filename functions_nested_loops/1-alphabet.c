@@ -1,12 +1,21 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+ * main - My principal function
+ * char - My variable 'ch' set to 'a'
+ * while - loop runs while 'ch' is less than or equal to 'z'
+ * putchar(ch) - print l'alphabet to 'a' to 'z'
+ * putchar('\n') - print a newline
+ * Return: 0*
+*/
 int main(void)
 {
-	print_alphabet();
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	putchar('\n');
 	return (0);
 }
