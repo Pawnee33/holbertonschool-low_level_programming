@@ -2,18 +2,31 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
 /* betty style doc for function main goes there */
+/**
+ * main - My principal function
+ * int - My variable 'n'
+ * int - My variable 'last_digit' set to 'n % 10'
+ * if - My condition 'if' is more than '5'
+ * printf - print "Last digit of is greater than 5 '\n'"
+ * else if - My condition is equal '5'
+ * printf - print "Last digit of %d is %d and is 0 '\n'"
+ * else - My condition is less than '5'
+ * printf - print "Last digit of %d is %d and is less than 6 and not 0 '\n'"
+ * Return: 0
+*/
 int main(void)
 {
 	int n;
-	int last_digit; 
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 	last_digit = n % 10;
+
 	/* your code goes there */
+
 	if (last_digit > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
@@ -24,7 +37,7 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n,last_digit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
 	}
 	return (0);
 }
