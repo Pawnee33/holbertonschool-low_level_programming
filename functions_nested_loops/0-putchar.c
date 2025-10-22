@@ -3,6 +3,8 @@
 /**
  * main - My principal function
  * char - My variable 'ch' set to _putchar
+ * int - My varible 'i' set to '0'
+ * while - loop runs while 'i' isn't the end-of-string, keep looping
  * putchar - print "_putchar"
  * putchar('\n') - print a newline
  * Return: 0*
