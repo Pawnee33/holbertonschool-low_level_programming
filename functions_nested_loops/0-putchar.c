@@ -8,13 +8,17 @@
  * Return: 0*
 */
 int main(void)
-
-	while (str[i] != '\0')
-	char *str = "_putchar";
-	int i =0;
 {
-	putchar(str[i]);
-	i++;
+	char *str = "_putchar";
+
+	int i =0;
+	
+	while (str[i] != '\0')
+
+	{
+		putchar(str[i]);
+		i++;
+	}
 
 	putchar('\n');
 	return (0);
