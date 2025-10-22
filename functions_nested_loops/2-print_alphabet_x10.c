@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * print_alphabet - Prints the alphabet in lowercase, followed by a new line
- * char - My variable 'ch' set to 'a'
- * while - loop runs while 'ch' is less than or equal to 'z'
- * putchar(ch) - print l'alphabet to 'a' to 'z'
+ * print_alphabet - Prints the alphabet in lowercase 10 times
+ * char - My variable 'ch'
+ * for - loop runs while 'i' and 'j' for repeat the display 10 times
+ * for - run the 26 letters of the alphabet
+ * putchar(ch++) - print the current letter 'ch' then increment 'ch'
  * putchar('\n') - print a newline
  * Return: 0*
 */
