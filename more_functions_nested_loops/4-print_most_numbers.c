@@ -5,7 +5,7 @@
  * if - Check if 'i' isn't equal to '50' and '52'
  * _putchar(i) - Prints 0 to 9
  * _putchar('\n') - Print a newline
- * */
+*/
 void print_most_numbers(void)
 {
 	int i;
