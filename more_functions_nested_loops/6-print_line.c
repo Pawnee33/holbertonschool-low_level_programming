@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - Function that draws a straight line
+ * @n: number of times the character '_' should be printed
  * if - check if 'n' is more than '0'
  * for - loop runs while 'i' is less to 'n'
  * _putchar('_') - Prints '_'
