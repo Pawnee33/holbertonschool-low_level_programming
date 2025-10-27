@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - Function that prints a square
- * @n: number of times the character '#' should be printed
+ * @size: number of times the character '#' should be printed
  * if - check if 'size' is more than '0'
  * for - loop runs while 'i' is less to 'size'
  * for - loop runs while 'j' is less to 'i'
