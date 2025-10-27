@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - Function that prints numbers (0 to 9)
+ * print_most_numbers - Function that prints numbers (0 to 9)
  * for - loop runs while 'i' is less to '58' up to '9'
  * if - Check if 'i' isn't equal to '50' and '52'
  * _putchar(i) - Prints 0 to 9
