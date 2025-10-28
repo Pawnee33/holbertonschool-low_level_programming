@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap-int - swap int *a and *b
+ * swap_int - swap int *a and *b
  * @a: pointer to an interger to update
  * @b: pointer to an interger to update
  * int paw - set to '*a'
