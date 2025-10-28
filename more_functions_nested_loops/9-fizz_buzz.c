@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - Prints the numbers from '1' to '100'
- * @i: set to '0'
  * for - Prints the numbers from '1' to '100'
  * if - Prints "FizzBuzz" for multiples of both 3 and 5
  * else if - Prints "Fizz" for multiples of 3
