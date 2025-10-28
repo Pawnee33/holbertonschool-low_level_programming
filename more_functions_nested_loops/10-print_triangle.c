@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_square - Function that prints a square
+ * print_triangle - Function that prints a square
  * @size: number of times the character '#' should be printed
  * if - check if 'size' is less and equal to '0'
  * for - loop runs while 'i' is less to 'size'
