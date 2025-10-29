@@ -1,22 +1,17 @@
 #include "main.h"
 /**
- * _puts2 - prints every other character of a string
- * @str: the string to print
- *
- * Description: This function prints one character out of two,
- * starting with the first character, followed by a new line.
- * It stops printing when it reaches the null terminator '\0'
- * to avoid reading beyond the end of the string.
- */
+ * puts2 - Function that prints every other character of a string
+ * , starting with the first character, followed by a new line
+ * @str: the string we want to know
+ * int i - set to '0'
+ * for - run through the array 'str'
+*/
 void puts2(char *str)
 {
 int i;
 
-while (str[i] != '\0')
-{
+for (i = 0; str[i] != '\0'; i += 2)
 	_putchar(str[i]);
-	i += 2;
-}
 
 _putchar('\n');
 }
