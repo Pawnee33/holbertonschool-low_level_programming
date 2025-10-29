@@ -6,6 +6,8 @@
  * @n: number of elements to print
  * for - loop through the array 'a'
  * printf - Prints each integer
+ * if - If 'i' is less than 'n - 1'
+ * print - Prints ","
  * prinf - Prints a new line
 */
 void print_array(int *a, int n)
@@ -15,6 +17,8 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d ", a[i]);
+		if (i < n - 1)
+			printf(", ");
 	}
 	printf("\n");
 }
