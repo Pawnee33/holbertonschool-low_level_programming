@@ -9,7 +9,7 @@
  * while - read digits and build the result
  * Return: return the final result with the correct sign
 */
-int _atoi(char s)
+int _atoi(char *s)
 {
 int i = 0;
 int sign = 1;
