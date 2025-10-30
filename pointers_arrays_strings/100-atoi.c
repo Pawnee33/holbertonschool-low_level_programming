@@ -20,22 +20,19 @@ int _atoi(char *s)
     {
         if (s[i] == '-')
             sign *= -1;
-        else if (s[i] == '+')
-            ;
+
         else if (s[i] >= '0' && s[i] <= '9')
         {
             digit_found = 1;
             result = result * 10 + (s[i] - '0');
         }
         else if (digit_found)
-        {
             break;
+			i++;
         }
-        i++;
-    }
 
     if (!digit_found)
         return 0;
-
-    return result * sign;
+		result = result;
+    return (result);
 }
