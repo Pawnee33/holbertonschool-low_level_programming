@@ -24,13 +24,13 @@ int _atoi(char *s)
 			{
 				digit_found = 1;
 				result = result * 10 + (s[i] - '0');
-				}
-				else if (digit_found)
-				break;
-				i++;
-				}
-				if (!digit_found)
-				return 0;
-				result = result;
-				return (result);
+			}
+			else if (digit_found)
+			break;
+			i++;
+	}
+	if (!digit_found)
+	return 0;
+	result = result;
+	return (result);
 }
