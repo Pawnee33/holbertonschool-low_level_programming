@@ -19,7 +19,7 @@ int started = 0;
 while (s[i] != '\0')
 {
 if (s[i] == '-')
-sign= -1;
+sign *= -1;
 else if (s[i] >= '0' && s[i] <= '9')
 {
 started = 1;
@@ -31,5 +31,7 @@ i++;
 }
 if (!started)
 return (0);
-return (result * sign);
+if (sign > 0)
+result = -result;
+return (result);
 }
