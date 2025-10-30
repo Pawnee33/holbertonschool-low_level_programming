@@ -13,19 +13,18 @@ int _atoi(char *s)
 {
     int i = 0, sign = 1, result = 0;
 
-    /* loop through each character */
     while (s[i])
     {
         if (s[i] == '-')
-            sign = -sign;      /* flip sign for each '-' */
-        else if (s[i] >= '0' && s[i] <= '9') /* start number */
+            sign = -sign;
+        else if (s[i] >= '0' && s[i] <= '9')
         {
-            while (s[i] >= '0' && s[i] <= '9') /* read digits */
+            while (s[i] >= '0' && s[i] <= '9')
             {
                 result = result * 10 + (s[i] - '0');
                 i++;
             }
-            break; /* stop after number */
+            break;
         }
         i++;
     }
