@@ -21,8 +21,8 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
-		sign *= -1;
-		i++;
+			sign *= -1;
+			i++;
 		}
 		else
 		{
@@ -34,7 +34,5 @@ int _atoi(char *s)
 			i++;
 		}
 	}
-
-
 	return (result * sign);
 }
