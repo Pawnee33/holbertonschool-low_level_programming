@@ -11,28 +11,24 @@
 */
 int _atoi(char *s)
 {
-	int i = 0;
-	int sign = 1;
-	int result = 0;
+    int i = 0, sign = 1, result = 0;
 
+    /* loop through each character */
+    while (s[i])
+    {
+        if (s[i] == '-')
+            sign = -sign;      /* flip sign for each '-' */
+        else if (s[i] >= '0' && s[i] <= '9') /* start number */
+        {
+            while (s[i] >= '0' && s[i] <= '9') /* read digits */
+            {
+                result = result * 10 + (s[i] - '0');
+                i++;
+            }
+            break; /* stop after number */
+        }
+        i++;
+    }
 
-	
-	while (s[i])
-	{
-		if (s[i] == '-')
-		{
-			sign *= -1;
-			i++;
-		}
-		else
-		{
-			i++;
-		}
-		while (s[i] >= '0' && s[i] <= '9')
-		{
-			result = result * 10 + (s[i] - '0');
-			i++;
-		}
-	}
-	return (result * sign);
+    return result * sign;
 }
