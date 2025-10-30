@@ -1,10 +1,13 @@
 #include "main.h"
 /**
- * *_strcpy - Function that copies a string from source to destination
- * @dest: pointer to the buffer where the string will be copied
- * @src: pointer to the string to copy
- * while - loop through the array 'src'
- * Return: dest
+ * _atoi - converts a string to an integer
+ * @s: the string to convert
+ * int i - set to '0'
+ * int sign - set to '1'
+ * int result - set to '0'
+ * while - handle signs before the number
+ * while - read digits and build the result
+ * Return: return the final result with the correct sign
 */
 int _atoi(char *s)
 {
