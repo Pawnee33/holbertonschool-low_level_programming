@@ -20,8 +20,6 @@ int _atoi(char *s)
             sign *= -1;
         else if (s[i] >= '0' && s[i] <= '9')
             found_digit = 1;
-        else if (s[i] != '+')
-            ;
         i++;
     }
 
