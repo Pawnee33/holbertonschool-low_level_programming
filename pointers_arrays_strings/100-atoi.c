@@ -29,10 +29,10 @@ int _atoi(char *s)
         else if (digit_found)
             break;
 			i++;
-        }
-
-    if (!digit_found)
-        return 0;
-		result = result;
-    return (result);
+			}
+			
+			if (!digit_found)
+			return 0;
+			result = result;
+			return (result);
 }
