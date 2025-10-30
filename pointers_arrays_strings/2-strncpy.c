@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * *_strncat - Copies up to 'n' characters from the string 'src' to 'dest'
- * @dest: pointer to the destination buffer 
+ * *_strncpy - Copies up to 'n' characters from the string 'src' to 'dest'
+ * @dest: pointer to the destination buffer
  * @src: pointer to the source string
  * @n: maximum number of characters to copy
  * int i - set to '0'
@@ -18,10 +18,10 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
-    while (i < n)
-    {
-        dest[i] = '\0';
-        i++;
-    }
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
