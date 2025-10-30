@@ -16,8 +16,6 @@ int _atoi(char *s)
 	int result = 0;
 	int found_digit = 0;
 
-	while (s[i] != '\0' && !(s[i] == '-' || s[i] == '+' || (s[i] >= '0' && s[i] <='9')))
-	i++;
 	
 	while (s[i] == '-' || s[i] == '+')
 	{
