@@ -5,30 +5,30 @@
  * @accept: string contaning accepting characters
  * for - loop through the string until ce reach the null terminator
  * for - Check if 's[i] is in 'accept'
- * if - My string is equal to 'accept' 
+ * if - My string is equal to 'accept'
  * Return: number of bytes in the initialsegment of 's'
  * , which consist only of bytes from 'accept'
 */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
-    unsigned int j = 0;
-    int found;
+	unsigned int j = 0;
+	int found;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-        found = 0;
+		found = 0;
 
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-            if (s[i] == accept[j])
-            {
+			if (s[i] == accept[j])
+			{
 			found = 1;
-            break;
-		    }
-        }
-    if (!found)
-    break;
+			break;
+			}
+		}
+	if (!found)
+	break;
 	}
-    return (i);
+	return (i);
 }
