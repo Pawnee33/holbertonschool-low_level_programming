@@ -5,6 +5,7 @@
  * @accept: string contaning accepting characters
  * for - loop through the string until ce reach the null terminator
  * for - Check if 's[i] is in 'accept'
+ * if - My string is equal to 'accept' 
  * Return: number of bytes in the initialsegment of 's'
  * , which consist only of bytes from 'accept'
 */
