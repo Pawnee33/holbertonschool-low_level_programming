@@ -6,6 +6,8 @@
  * for - loop through each row of the chessboard
  * for - loop through each column of the current row
  * Description: This function prints the chessboard
+ * _putchar(a[lignes][colonnes]) - print one square
+ * _putchar('\n') - move to the next row
  */
 void print_chessboard(char (*a)[8])
 {
