@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * *_strchr - Function that locates a character in a string
- * @s: pointer to the string to search in
- * @c: Charcter to locate
+ * _strspn - Function that gets the length of a prefix substring.
+ * @s: string to be scanned
+ * @accept: string contaning accepting characters
  * for - loop through the string until ce reach the null terminator
- * if - check if the current character matches 'c'
- * , return pointer to the matching character
- * Return: NULL
+ * for - Check if 's[i] is in 'accept'
+ * Return: number of bytes in the initialsegment of 's'
+ * , which consist only of bytes from 'accept'
 */
 unsigned int _strspn(char *s, char *accept)
 {
