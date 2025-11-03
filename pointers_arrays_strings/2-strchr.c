@@ -6,6 +6,8 @@
  * for - loop through the string until ce reach the null terminator
  * if - check if the current character matches 'c'
  * , return pointer to the matching character
+ * if - check if the current character matches '\0'
+ * , return pointer to the matching character
  * Return: NULL
 */
 char *_strchr(char *s, char c)
