@@ -2,7 +2,6 @@
 /**
  * print_chessboard - prints an 8x8 chessboard
  * @a: pointer to an array of 8 charcters
- * @needle: substring to find
  * for - loop through each row of the chessboard
  * for - loop through each column of the current row
  * Description: This function prints the chessboard
