@@ -6,7 +6,6 @@
  * _putchar - print a new line
  *  _print_rev_recursion(s + 1) - recusive call for the rest of the string
  * _putchar(*s) - print the current character
- * Return: exit the function
 */
 void _print_rev_recursion(char *s)
 {
@@ -15,5 +14,4 @@ void _print_rev_recursion(char *s)
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
 	}
-	return;
 }
