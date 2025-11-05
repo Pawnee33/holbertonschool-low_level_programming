@@ -1,10 +1,16 @@
 #include "main.h"
 /**
-* main - prints that multiplies two numbers
-* @argc: number of command-line arguments
-* @argv: array of command-line
-* Return: 0
-*/
+ * main - multiplies two numbers passed as arguments
+ * @argc: number of command-line arguments
+ * @argv: array of command-line arguments
+ *
+ * Description: This program multiplies two integers provided
+ * as command-line arguments. If exactly two arguments are
+ * provided, it prints the result. Otherwise, it prints "Error"
+ * and returns 1.
+ *
+ * Return: 0 on success, 1 on error
+ */
 int main(int argc, char **argv)
 {
 	int sum = 0;
