@@ -15,12 +15,14 @@
  */
 int main(int argc, char **argv)
 {
-	int sum = 0;
+	int product1;
+	int product2;
 
 	if (argc == 3)
 	{
-		sum = atoi(argv[1]) * atoi(argv[2]);
-		printf("Result = %d\n", sum);
+		product1 = atoi(argv[1]);
+		product2 = atoi(argv[2]);
+		printf("Result = %d\n", product1 *product2);
 		return (0);
 	}
 	else
