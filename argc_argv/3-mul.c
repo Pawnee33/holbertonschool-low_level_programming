@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	{
 		product1 = atoi(argv[1]);
 		product2 = atoi(argv[2]);
-		printf("%d\n", product1 *product2);
+		printf("%d\n", product1 * product2);
 		return (0);
 	}
 	else
