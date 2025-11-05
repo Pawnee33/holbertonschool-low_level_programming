@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* main - Function that prints the number of arguments
-* passed into it
+* main - prints the number of arguments
+* , passed into it
 * @argc: number of command-line arguments
 * @argv: array of command-line
 * Return: 0
@@ -9,6 +9,6 @@
 int main(int argc, char **argv)
 {
 	(void)argv;
-	printf("argc - %d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
