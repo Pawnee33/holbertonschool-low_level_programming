@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers passed as arguments
  * @argc: number of command-line arguments
@@ -21,11 +23,9 @@ int main(int argc, char **argv)
 		printf("Result = %d\n", sum);
 		return (0);
 	}
-
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 }
