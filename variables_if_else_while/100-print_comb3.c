@@ -1,4 +1,12 @@
 #include <stdio.h>
+/**
+* main - Function that prints all possible 
+* different combinations of two digits
+* @i: My first digit
+* @j: My second digit
+* 
+* Return: 0
+*/
 int main(void)
 {
     int i = 0;
