@@ -1,41 +1,39 @@
 #include "main.h"
 /**
-* *str_concat - Function that concatenates two strings
-* @s1: is the first string
-* @s2: is the second string to concatenates
-* Return: The address of the copy of the concatenates two
-* string
+* **alloc_grid - Function that returns a pointer to a
+* 2 dimensional array of integers
+* @width: the number of columns
+* @height: the number of rows
+* Return: the allocated and initialized 2D array
 */
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	char *concate;
-	unsigned int i, j;
+	int **grille;
+	int i;
+	int j;
 
-	if (s1 == NULL)
-	{
-		return (NULL);
-	}
-
-	if (s2 == NULL)
-	{
-		return (NULL);
-	}
-
-	concate = malloc(strlen(s1) + strlen(s2) + 1);
-
-	if (concate == NULL)
+	if (width <= 0 || height <= 0)
 	return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		concate[i] = s1[i];
-	}
+	grille = malloc(sizeof(int *) * height);
+	if (grille == NULL)
+	return (NULL);
 
-	for (j = 0; s2[j] != '\0'; j++)
+	for (i = 0; i < height; i++)
 	{
-		concate[i + j] = s2[j];
-	}
-	concate[i + j] = '\0';
+		grille[i] = malloc(sizeof(int) * width);
+		if (grille[i] == NULL)
+		{
+			for (j = 0; j < i; j++)
+			free(grille[j]);
+			free(grille);
+			return (NULL);
+		}
 
-	return (concate);
+		for (j = 0; j < width; j++)
+		{
+			grille[i][j] = 0;
+		}
+	}
+	return (grille);
 }
