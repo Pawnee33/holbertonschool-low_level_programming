@@ -2,7 +2,7 @@
 /**
 * *malloc_checked - Function that allocates memory
 * using malloc
-* @n: Number of bytes
+* @b: Number of bytes
 * Return: my pointer
 */
 void *malloc_checked(unsigned int b)
