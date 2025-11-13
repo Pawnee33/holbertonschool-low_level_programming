@@ -2,9 +2,6 @@
 /**
 * print_dog - Function that prints a "struct dog"
 * @d: Is point to my element to prints
-* @name: for the name of the dog
-* @age: for the age of the dog
-* @owner: for the owner of the dog
 */
 void print_dog(struct dog *d)
 {
