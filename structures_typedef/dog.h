@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* struct dog - Name of the structure
+* struct dog_t - Name of the structure
 * @name: for the name of the dog
 * @age: for the age of the dog
 * @owner: for the owner of the dog
