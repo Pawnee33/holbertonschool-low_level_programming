@@ -1,69 +1,77 @@
 #include "dog.h"
 /**
+* _strlen - Function that return length of a string
+*@s: string to count the length
+* Return: the length
+*/
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; s++)
+	{
+		i++;
+	}
+	return (i);
+}
+/**
+* *_strcpy - Copy a string
+* @dest: Destinantion of the string
+* @src: Source of the string
+* Return: Destination of the copy of the string
+*/
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+	return (dest);
+}
+/**
 * *new_dog - creates a new "dog"
-* @d: Declared the name of the dog, given his age and his owner
 * @name: for the name of the dog
 * @age: for the age of the dog
 * @owner: for the owner of the dog
-* @new_name: for the name of the new dog
-* @new_owner: for the owner of the new dog
-* @len_name: for count the size of name
-* @len_owner: for count the size of name
-* @tmpn: for copy all character of name
-* @tmpo: for copy all character of owner
 * Return: d
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-	char *new_name;
-	char *new_owner;
-	int len_name = 0;
-	int len_owner = 0;
-	char *tmpn;
-	char *tmpo;
+	int len_name, len_owner;
+
+	if (name == NULL || owner == NULL)
+	return (NULL);
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	return (NULL);
 
-	for (; name[len_name] != '\0'; len_name++)
-	;
-	new_name = malloc(sizeof(char) * (len_name + 1));
+	len_name = _strlen(name);
+	len_owner = _strlen(owner);
 
-	if (new_name == NULL)
+	d->name = malloc(sizeof(char) * (len_name + 1));
+
+	if (d->name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
 
-	tmpn = new_name;
-	for (; *name != '\0'; name++, tmpn++)
-	{
-		*tmpn = *name;
-	}
-	*tmpn = '\0';
+	d->owner = malloc(sizeof(char) * (len_owner + 1));
 
-	for (; owner[len_owner] != '\0'; len_owner++)
-	;
-	new_owner = malloc(sizeof(char) * (len_owner + 1));
-
-	if (new_owner == NULL)
+	if (d->owner == NULL)
 	{
-		free(new_name);
+		free(d->name);
 		free(d);
 		return (NULL);
 	}
 
-	tmpo = new_owner;
-	for (; *owner != '\0'; owner++, tmpo++)
-	{
-		*tmpo = *owner;
-	}
-	*tmpo = '\0';
-
-	d->name = new_name;
+	d->name = _strcpy(d->name, name);
 	d->age = age;
-	d->owner = new_owner;
+	d->owner = _strcpy(d->owner, owner);
 	return (d);
 }
