@@ -6,15 +6,11 @@
 */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	if (s == NULL)
-	return (0);
+	while(s[i])
+	i++;
 
-	for (i = 0; s[i] != '\0'; s++)
-	{
-		i++;
-	}
 	return (i);
 }
 /**
@@ -49,21 +45,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name == NULL || owner == NULL)
 	return (NULL);
 
-	len_name = _strlen(name);
-	len_owner = _strlen(owner);
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	return (NULL);
 
-	d->name = malloc(len_name + 1);
+	d->name = malloc(sizeof(char) * (_strlen(name)+ 1));
 	if (d->name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
 
-	d->owner = malloc(len_owner + 1);
+	d->owner = malloc(sizeof(char) * (_strlen(owner)+ 1));
 	if (d->owner == NULL)
 	{
 		free(d->name);
