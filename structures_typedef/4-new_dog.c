@@ -11,6 +11,7 @@
 * @len_owner: for count the size of name
 * @tmpn: for copy all character of name
 * @tmpo: for copy all character of owner
+* Return: d
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
