@@ -29,7 +29,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (; name[len_name] != '\0'; len_name++)
 	;
-	new_name = malloc(len_name + 1);
+	new_name = malloc(sizeof(char) * (len_name + 1));
 
 	if (new_name == NULL)
 	{
@@ -46,7 +46,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (; owner[len_owner] != '\0'; len_owner++)
 	;
-	new_owner = malloc(len_owner + 1);
+	new_owner = malloc(sizeof(char) * (len_owner + 1));
 
 	if (new_owner == NULL)
 	{
