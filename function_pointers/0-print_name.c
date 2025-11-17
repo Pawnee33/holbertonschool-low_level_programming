@@ -6,12 +6,12 @@
 * @name: The name to be prints
 * @f: My function pointer
 *
-* Return: void
+* Return: NULL
 */
 void print_name(char *name, void (*f)(char *))
 {
 	if (f == NULL)
-		return;
-
-	f(name);
+	{
+		f(name);
+	}
 }
