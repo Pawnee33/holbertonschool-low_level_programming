@@ -17,27 +17,23 @@ void print_all(const char * const format, ...)
 	{
 		if (types)
 			printf(",");
+		types = 1;
 		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int));
-				types = 1;
 				break;
 			case 'i':
 				printf("%d", va_arg(ap, int));
-				types = 1;
 				break;
 			case 'f':
 				printf("%f", va_arg(ap, double));
-				types = 1;
 				break;
 			case 's':
 				s = va_arg(ap, char*);
 				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
-				types = 1;
+					s = "(nil)";
+				printf("%s", s);
 				break;
 			default:
 			types = 0;
