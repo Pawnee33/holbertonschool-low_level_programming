@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 	while (format != NULL && format[i] != '\0')
 	{
 		if (types)
-			printf(",");
+			printf(", ");
 		types = 1;
 		switch (format[i])
 		{
