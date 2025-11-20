@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	unsigned int i = 0;
 	int types = 0;
-	char *s;
+	char *word;
 
 	va_start(ap, format);
 	while (format != NULL && format[i] != '\0')
@@ -30,10 +30,10 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(ap, double));
 				break;
 			case 's':
-				s = va_arg(ap, char*);
-				if (s == NULL)
-					s = "(nil)";
-				printf("%s", s);
+				word = va_arg(ap, char*);
+				if (word == NULL)
+					word = "(nil)";
+				printf("%s", word);
 				break;
 			default:
 			types = 0;
