@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <string.h>
 /**
-* add_node - add a new node to my list_t
-* @head: The adress of the first node to ma list_t
-* @str: My string to duplicated and store in my new node
+* add_node - adds a new node of a list_t
+* @head: Pointer to the pointer to the head of the list
+* @str: String to duplicate and store in the new node
 *
 * Return: The adress of my new node or NULL
 */
