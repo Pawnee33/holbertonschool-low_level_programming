@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <string.h>
 /**
 * add_node - add a new node to my list_t
 * @head: The adress of the first node to ma list_t
