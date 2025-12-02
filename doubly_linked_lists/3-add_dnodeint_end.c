@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <string.h>
 /**
-* add_dnodeint_end - adds a end node at the beginning of a dlistint_t
+* add_dnodeint_end - adds a end node at the end of a dlistint_t
 * @head: Pointer to the pointer to the head of the list
 * @n: value to store in the end node
 *
