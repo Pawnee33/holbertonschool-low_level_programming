@@ -12,6 +12,7 @@ void free_dlistint(dlistint_t *head)
 	while (keep_address != NULL)
 	{
 		dlistint_t *next = keep_address->next;
+        
 		free(keep_address);
 		keep_address = next;
 	}
