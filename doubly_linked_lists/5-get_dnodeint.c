@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* get_dnodeint_at_index - Returns the number of index node
+* get_dnodeint_at_index - Returns the numbers of index node
 * of a dlistint_t list
 * @head: Pointer to the head of the list
 * @index: Index to return
@@ -12,7 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *keep_address = head;
 	unsigned int i;
 
-	for (i = 0; keep_address!= NULL && i < index; i++)
+	for (i = 0; keep_address != NULL && i < index; i++)
 	{
 		keep_address = keep_address->next;
 	}
