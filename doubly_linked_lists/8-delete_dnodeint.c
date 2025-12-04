@@ -28,9 +28,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	tmp = *head;
 
-	for (i = 1; tmp != NULL && i < index; i++)
+	while (i != index)
 	{
 		tmp = tmp->next;
+		i++;
 		if (tmp == NULL)
 			return (-1);
 	}
