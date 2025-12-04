@@ -2,14 +2,14 @@
 /**
  * delete_dnodeint_at_index - deletes a node of a dlistint_t
  * list at a given index
- * @head: double pointer to the head of the doubly linked list
- * @index: position of the node to delete (0-based)
+ * @head: pointer to the head of the doubly linked list
+ * @index: position of the node to delete
  *
- * Return: 1 on success, -1 on failure
+ * Return: 1 on success, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *tmp = *head;
+	dlistint_t *tmp;
 	unsigned int i = 0;
 
 	if (*head == NULL)
@@ -18,6 +18,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
+		tmp = *head;
 		*head = (*head)->next;
 		if (*head != NULL)
 		{
@@ -35,13 +36,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			return (-1);
 		}
 	}
-	if (tmp->next != NULL)
-	{
-		tmp->next->prev = tmp->prev;
-	}
 	if (tmp->prev != NULL)
 	{
 		tmp->prev->next = tmp->next;
+	}
+	if (tmp->next != NULL)
+	{
+		tmp->next->prev = tmp->prev;
 	}
 	free(tmp);
 	return (1);
