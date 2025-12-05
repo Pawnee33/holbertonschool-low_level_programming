@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(file_from), close(file_to), exit(98);
 	}
-	if (close(file_from) == -1 || (file_to) == -1)
+	if (close(file_from) == -1 || close(file_to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", file_from);
 		exit(100);
