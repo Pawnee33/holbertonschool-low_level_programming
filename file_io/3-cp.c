@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 	}
 	if (close(file_from) == -1 || close(file_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: Can't close file_VALUE", file_from);
 		exit(100);
 	}
 	return (0);
